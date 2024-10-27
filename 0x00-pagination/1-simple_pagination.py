@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""get pages"""
 import csv
 import math
 from typing import List
