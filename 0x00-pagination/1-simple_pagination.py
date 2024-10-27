@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import csv
 import math
 from typing import List
@@ -25,6 +26,16 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """gets the exact page requested
+
+        Args:
+            page (int, optional): current page number. Defaults to 1.
+            page_size (int, optional): number of items page. Defaults to 10.
+
+        Returns:
+            List[List]: list of all the data gotten
+        """
+
         assert isinstance(page, int)
         assert isinstance(page_size, int)
         assert page > 0, f"{page} must be greater than zero"
