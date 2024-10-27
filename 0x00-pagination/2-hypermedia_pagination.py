@@ -49,11 +49,22 @@ class Server:
         return self.__dataset[correctedPages[0]:correctedPages[1]]
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
+        """ return a dictionary of information about page
+
+        Args:
+            page (int, optional): current page number. Defaults to 1.
+            page_size (int, optional): . Defaults to 10.
+
+        Returns:
+            Dict: informaton of total_page, pages, next page,
+            and data
+        """
+
         total_items: int = len(self.dataset())
         total_pages: int = (total_items + page_size - 1) // page_size
         data: List = self.get_page(page, page_size)
 
-        data_objects = {
+        data_objects: Dict = {
             'page_size': page_size,
             'page': page,
             'data': data,
