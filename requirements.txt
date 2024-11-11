@@ -1,0 +1,10 @@
+babel==2.16.0
+blinker==1.9.0
+click==8.1.7
+Flask==2.2.2
+Flask-Babel==2.0.0
+itsdangerous==2.2.0
+Jinja2==3.1.4
+MarkupSafe==3.0.2
+pytz==2024.2
+Werkzeug==2.3.7
